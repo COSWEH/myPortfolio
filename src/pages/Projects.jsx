@@ -61,7 +61,7 @@ function Projects() {
 										href={project.link}
 										target="_blank"
 										rel="noopener noreferrer"
-										className="mt-4 inline-block hover:bg-gray-900 hover:rounded-md hover:text-gray-100 hover:p-1 text-lg font-medium">
+										className="mt-4 inline-block bg-gray-900 rounded-md hover:text-gray-100 px-2 py-2 text-lg font-medium">
 										View Project on GitHub
 									</a>
 								</div>
