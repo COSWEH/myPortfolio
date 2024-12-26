@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FiSun, FiMoon } from "react-icons/fi";
+import resume from "../../src/assets/Paolo Ramos Resume.pdf";
 
 function Navbar({ isDarkMode, setIsDarkMode }) {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -92,9 +93,11 @@ function Navbar({ isDarkMode, setIsDarkMode }) {
 
 				{/* Action Buttons */}
 				<div className="flex items-center space-x-4">
-					<button className="px-4 py-2 bg-blue-500 text-white text-sm rounded-lg hover:bg-blue-600">
-						Resume
-					</button>
+					<a href={resume} download="Paolo Ramos Resume">
+						<button className="px-4 py-2 bg-blue-500 text-white text-sm rounded-lg hover:bg-blue-600">
+							Resume
+						</button>
+					</a>
 					<button
 						onClick={toggleTheme}
 						className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600 text-gray-800 dark:text-white">
