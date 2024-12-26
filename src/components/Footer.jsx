@@ -24,7 +24,7 @@ function Footer() {
 						<FaInstagram size={24} />
 					</a>
 					<a
-						href="mailto:oloap0428@gmail.com"
+						href="mailto:pmrdev0428@gmail.com"
 						className="text-white hover:text-red-500 transition duration-300">
 						<FaEnvelope size={24} />
 					</a>
