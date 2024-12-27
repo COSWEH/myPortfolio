@@ -59,12 +59,12 @@ function Projects() {
 								</p>
 								<p className="mt-3">{project.description}</p>
 
-								<div className="mt-auto justify-between flex">
+								<div className="mt-auto justify-between flex gap-8">
 									<a
 										href={project.link}
 										target="_blank"
 										rel="noopener noreferrer"
-										className="mt-4 inline-block bg-gray-900 rounded-md text-gray-100 px-2 py-2 font-medium">
+										className="mt-4 inline-block bg-gray-900 rounded-md text-gray-100 px-2 py-2 text-sm">
 										View Project on GitHub
 									</a>
 
@@ -72,11 +72,11 @@ function Projects() {
 										<a
 											href={project.website}
 											target="_blank"
-											className="mt-4 inline-block bg-gray-900 rounded-md text-gray-100 px-2 py-2 font-medium">
+											className="mt-4 inline-block bg-gray-900 rounded-md text-gray-100 px-2 py-2 text-sm">
 											View Website
 										</a>
 									) : (
-										<div className="mt-4 px-2 py-2 text-gray-500">
+										<div className="mt-4 px-2 py-2 text-sm text-gray-500">
 											No website available
 										</div>
 									)}
