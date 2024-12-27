@@ -12,8 +12,8 @@ function Home() {
 				</h1>
 
 				{/* Subtitle */}
-				<h3 className="text-xl md:text-2xl font-semibold text-gray-800 dark:text-white mb-6">
-					Major in Web Development
+				<h3 className="text-1xl md:text-3xl font-semibold text-gray-800 dark:text-white mb-6">
+					Major in Web System Technology
 				</h3>
 
 				{/* Image */}
