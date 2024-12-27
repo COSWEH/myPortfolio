@@ -13,6 +13,7 @@ function Projects() {
 				"Developed a cross-platform civic engagement hub using HTML, CSS, Bootstrap, JavaScript, PHP, and MySQL; implemented responsive design and efficient data management to enhance user accessibility and service delivery.",
 			link: "https://github.com/COSWEH/BLCapstone",
 			image: img_bayanlink,
+			website: "",
 		},
 		{
 			title: "GameOoap",
@@ -21,6 +22,7 @@ function Projects() {
 				"Created an immersive gaming discovery platform using ReactJS, RAWG API, ShadCN UI, and Tailwind CSS; optimized user experience through seamless navigation and modern UI frameworks.",
 			link: "https://github.com/COSWEH/Gamehub---ReactJS",
 			image: img_gameooap,
+			website: "https://gameooap-react-js.vercel.app",
 		},
 		{
 			title: "My Portfolio",
@@ -29,6 +31,7 @@ function Projects() {
 				"Designed and developed a professional portfolio using ReactJS, Tailwind CSS, and EmailJS; integrated interactive design and streamlined contact functionality to enhance engagement and presentation quality.",
 			link: "https://github.com/COSWEH/myPortfolio",
 			image: img_portfolio,
+			website: "https://ramos-paolo-portfolio.vercel.app",
 		},
 	];
 
@@ -56,14 +59,27 @@ function Projects() {
 								</p>
 								<p className="mt-3">{project.description}</p>
 
-								<div className="mt-auto">
+								<div className="mt-auto justify-between flex">
 									<a
 										href={project.link}
 										target="_blank"
 										rel="noopener noreferrer"
-										className="mt-4 inline-block bg-gray-900 rounded-md hover:text-gray-100 px-2 py-2 text-lg font-medium">
+										className="mt-4 inline-block bg-gray-900 rounded-md text-gray-100 px-2 py-2 font-medium">
 										View Project on GitHub
 									</a>
+
+									{project.website && project.website.trim() !== "" ? (
+										<a
+											href={project.website}
+											target="_blank"
+											className="mt-4 inline-block bg-gray-900 rounded-md text-gray-100 px-2 py-2 font-medium">
+											View Website
+										</a>
+									) : (
+										<div className="mt-4 px-2 py-2 text-gray-500">
+											No website available
+										</div>
+									)}
 								</div>
 							</div>
 						</div>
